@@ -1,6 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type":"module",
   "description": "Brain Games for command line",
   "main": "index.js",
   "scripts": {
