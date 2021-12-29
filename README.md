@@ -2,7 +2,7 @@
 
 Создано в рамках учебного проекта [Игры Разума](https://ru.hexlet.io/professions/frontend/projects/44) от [Хекслет](https://ru.hexlet.io/).
 
-### Hexlet tests and linter status:
+### Package status:
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/5784889176721155ef44/maintainability)](https://codeclimate.com/github/cgehuzi/frontend-project-lvl1/maintainability)
 ![ESLint](https://github.com/cgehuzi/frontend-project-lvl1/actions/workflows/lint.yml/badge.svg)
