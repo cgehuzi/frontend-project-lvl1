@@ -4,6 +4,9 @@ const gameRules = 'Find the greatest common divisor of given numbers.';
 const getGreatestDivisor = (a, b) => {
   const [min, max] = a > b ? [b, a] : [a, b];
   let result = min;
+  if (max % min === 0) {
+    return result;
+  }
 
   for (let i = Math.floor(min / 2); i > 1; i -= 1) {
     if (min % i === 0 && max % i === 0) {
