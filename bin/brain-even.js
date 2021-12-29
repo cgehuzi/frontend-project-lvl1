@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 
+import _ from 'lodash';
 import getPlayerName, { getAnswer } from '../src/cli.js';
 
 const playerName = getPlayerName();
 const roundCount = 3;
 
 const evenRound = () => {
-  const question = Math.round(Math.random() * 100);
+  const question = _.random(0, 100);
   const coorrectAnswer = question % 2 === 0 ? 'yes' : 'no';
 
   const playerAnswer = getAnswer(question);
