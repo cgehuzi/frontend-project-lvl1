@@ -1,8 +1,8 @@
 import _ from 'lodash';
 
-const progressionRules = 'What number is missing in the progression?';
+const gameRules = 'What number is missing in the progression?';
 
-const progressionRound = () => {
+const gameRound = () => {
   const progressionLength = _.random(5, 10);
   const progressionStep = _.random(1, 20);
   const progressionStart = _.random(0, 20);
@@ -22,5 +22,5 @@ const progressionRound = () => {
   return [question, String(coorrectAnswer)];
 };
 
-export default progressionRound;
-export { progressionRules };
+export default gameRound;
+export { gameRules };

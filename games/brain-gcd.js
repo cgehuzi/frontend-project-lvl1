@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-const gcdRules = 'Find the greatest common divisor of given numbers.';
+const gameRules = 'Find the greatest common divisor of given numbers.';
 const getGreatestDivisor = (a, b) => {
   const [min, max] = a > b ? [b, a] : [a, b];
 
@@ -17,7 +17,7 @@ const getGreatestDivisor = (a, b) => {
   return 1;
 };
 
-const gcdRound = () => {
+const gameRound = () => {
   const [number1, number2] = [_.random(2, 100), _.random(2, 100)];
   const question = `${number1} ${number2}`;
   const coorrectAnswer = getGreatestDivisor(number1, number2);
@@ -25,5 +25,5 @@ const gcdRound = () => {
   return [question, String(coorrectAnswer)];
 };
 
-export default gcdRound;
-export { gcdRules };
+export default gameRound;
+export { gameRules };

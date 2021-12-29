@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
 import startGame from '../src/index.js';
-import progressionRound, { progressionRules } from '../games/brain-pregression.js';
+import progressionRound, { gameRules as progressionRules } from '../games/brain-pregression.js';
 
 startGame(progressionRound, progressionRules);

@@ -1,9 +1,9 @@
 import _ from 'lodash';
 
-const calcRules = 'What is the result of the expression?';
+const gameRules = 'What is the result of the expression?';
 const expressions = ['+', '-', '*'];
 
-const calcRound = () => {
+const gameRound = () => {
   const [number1, number2] = [_.random(0, 25), _.random(0, 25)];
   const expression = expressions[_.random(0, expressions.length - 1)];
 
@@ -23,5 +23,5 @@ const calcRound = () => {
   return [question, String(coorrectAnswer)];
 };
 
-export default calcRound;
-export { calcRules };
+export default gameRound;
+export { gameRules };
