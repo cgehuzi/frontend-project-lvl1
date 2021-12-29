@@ -1,9 +1,8 @@
-import getPlayerName, { getAnswer } from './cli.js';
+import { getAnswer } from './cli.js';
 
 const roundsCount = 3;
 
-const startGame = (gameFunction, gameRules) => {
-  const playerName = getPlayerName();
+const startGame = (gameFunction, gameRules, playerName) => {
   console.log(gameRules);
 
   for (let i = 1; i <= roundsCount; i += 1) {
@@ -13,9 +12,7 @@ const startGame = (gameFunction, gameRules) => {
     if (coorrectAnswer === playerAnswer) {
       console.log('Correct!');
     } else {
-      console.log(
-        `'${playerAnswer}' is wrong answer ;(. Correct answer was '${coorrectAnswer}'.`,
-      );
+      console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${coorrectAnswer}'.`);
       console.log(`Let's try again, ${playerName}!`);
       return false;
     }
