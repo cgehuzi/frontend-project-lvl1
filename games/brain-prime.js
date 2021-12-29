@@ -3,7 +3,7 @@ import _ from 'lodash';
 const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
-  if (number === 2) {
+  if ([2, 3].includes(number)) {
     return true;
   }
 
@@ -11,12 +11,7 @@ const isPrime = (number) => {
     return false;
   }
 
-  for (let i = 1; i <= number / 3; i += 2) {
-    const divisor = i + 2;
-    if (number === divisor) {
-      return true;
-    }
-
+  for (let i = 1; i < number / 3; i += 2) {
     if (number % (i + 2) === 0) {
       return false;
     }
