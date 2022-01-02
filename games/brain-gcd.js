@@ -19,6 +19,7 @@ const getGreatestDivisor = (a, b) => {
 
 const gameRound = () => {
   const [number1, number2] = [_.random(2, 100), _.random(2, 100)];
+
   const question = `${number1} ${number2}`;
   const coorrectAnswer = getGreatestDivisor(number1, number2);
 
