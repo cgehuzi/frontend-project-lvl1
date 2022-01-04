@@ -3,7 +3,7 @@ import _ from 'lodash';
 const gameRules = 'What is the result of the expression?';
 const expressions = ['+', '-', '*'];
 
-const getExpressionResult = (expression, number1, number2) => {
+const getExpResult = (expression, number1, number2) => {
   switch (expression) {
     case '+':
       return number1 + number2;
@@ -21,10 +21,10 @@ const gameRound = () => {
   const expression = expressions[_.random(0, expressions.length - 1)];
 
   const question = `${number1} ${expression} ${number2}`;
-  const coorrectAnswer = getExpressionResult(expression, number1, number2);
+  const answer = getExpResult(expression, number1, number2);
 
-  return [question, String(coorrectAnswer)];
+  return [question, String(answer)];
 };
 
 export default gameRound;
-export { gameRules };
+export { gameRules, getExpressionResult };
