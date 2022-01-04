@@ -6,7 +6,7 @@ import startGame from '../src/index.js';
 import evenRound, { gameRules as evenRules } from '../games/brain-even.js';
 import calcRound, { gameRules as calcRules } from '../games/brain-calc.js';
 import gcdRound, { gameRules as gcdRules } from '../games/brain-gcd.js';
-import progressionRound, { gameRules as progressionRules } from '../games/brain-pregression.js';
+import progressionRound, { gameRules as progressionRules } from '../games/brain-progression.js';
 import primeRound, { gameRules as primeRules } from '../games/brain-prime.js';
 
 const playerName = getPlayerName();
