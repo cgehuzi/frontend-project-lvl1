@@ -18,10 +18,10 @@ const isPrime = (number) => {
 
 const gameRound = () => {
   const question = _.random(2, 200);
-  const coorrectAnswer = isPrime(question) ? 'yes' : 'no';
+  const answer = isPrime(question) ? 'yes' : 'no';
 
-  return [question, coorrectAnswer];
+  return [question, answer];
 };
 
 export default gameRound;
-export { gameRules };
+export { gameRules, isPrime };
