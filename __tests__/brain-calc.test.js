@@ -1,3 +1,4 @@
+import { test, expect } from '@jest/globals';
 import { getExpResult } from '../games/brain-calc.js';
 
 test('wrong expression', () => {

@@ -1,3 +1,4 @@
+import { test, expect } from '@jest/globals';
 import { getGreatestDivisor } from '../games/brain-gcd.js';
 
 test('greatest divisor', () => {

@@ -1,3 +1,4 @@
+import { test, expect } from '@jest/globals';
 import { getProgression, hideRandomItem } from '../games/brain-progression.js';
 
 test('get progression', () => {

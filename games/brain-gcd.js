@@ -9,11 +9,13 @@ const getGreatestDivisor = (a, b) => {
     return min;
   }
 
-  for (let i = Math.floor(min / 2); i >= 1; i -= 1) {
+  for (let i = Math.floor(min / 2); i > 1; i -= 1) {
     if (min % i === 0 && max % i === 0) {
       return i;
     }
   }
+
+  return 1;
 };
 
 const gameRound = () => {
