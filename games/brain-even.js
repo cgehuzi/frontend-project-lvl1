@@ -6,10 +6,10 @@ const isEven = (number) => number % 2 === 0;
 
 const gameRound = () => {
   const question = _.random(0, 100);
-  const coorrectAnswer = isEven(question) ? 'yes' : 'no';
+  const answer = isEven(question) ? 'yes' : 'no';
 
-  return [question, coorrectAnswer];
+  return [question, answer];
 };
 
 export default gameRound;
-export { gameRules };
+export { gameRules, isEven };
