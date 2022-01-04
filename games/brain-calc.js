@@ -27,4 +27,4 @@ const gameRound = () => {
 };
 
 export default gameRound;
-export { gameRules, getExpressionResult };
+export { gameRules, getExpResult };
