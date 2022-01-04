@@ -9,3 +9,6 @@ publish:
 
 lint:
 	npx eslint .
+
+game:
+	npx brain-games
