@@ -5,7 +5,8 @@
 ### Package status:
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/5784889176721155ef44/maintainability)](https://codeclimate.com/github/cgehuzi/frontend-project-lvl1/maintainability)
-![ESLint](https://github.com/cgehuzi/frontend-project-lvl1/actions/workflows/lint.yml/badge.svg)
+![ESLint](https://github.com/cgehuzi/brain-games/actions/workflows/lint.yml/badge.svg)
+![Jest](https://github.com/cgehuzi/brain-games/actions/workflows/jest.yml/badge.svg)
 
 ## Описание
 
