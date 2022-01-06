@@ -2,21 +2,7 @@ import _ from 'lodash';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
 
-const getGreatestDivisor = (a, b) => {
-  const [min, max] = a > b ? [b, a] : [a, b];
-
-  if (max % min === 0) {
-    return min;
-  }
-
-  for (let i = Math.floor(min / 2); i > 1; i -= 1) {
-    if (min % i === 0 && max % i === 0) {
-      return i;
-    }
-  }
-
-  return 1;
-};
+const getGreatestDivisor = (a, b) => (a % b > 0 ? getGreatestDivisor(b, a % b) : b);
 
 const gameRound = () => {
   const [number1, number2] = [_.random(2, 100), _.random(2, 100)];
