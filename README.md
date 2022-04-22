@@ -4,9 +4,9 @@
 
 ### Package status:
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/5784889176721155ef44/maintainability)](https://codeclimate.com/github/cgehuzi/brain-games/maintainability)
-![ESLint](https://github.com/cgehuzi/brain-games/actions/workflows/eslint.yml/badge.svg)
-![Jest](https://github.com/cgehuzi/brain-games/actions/workflows/jest.yml/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5784889176721155ef44/maintainability)](https://codeclimate.com/github/cgehuzi/frontend-project-lvl1/maintainability)
+[![eslint](https://github.com/cgehuzi/frontend-project-lvl1/actions/workflows/eslint.yml/badge.svg)](https://github.com/cgehuzi/frontend-project-lvl1/actions/workflows/eslint.yml)
+[![jest](https://github.com/cgehuzi/frontend-project-lvl1/actions/workflows/jest.yml/badge.svg)](https://github.com/cgehuzi/frontend-project-lvl1/actions/workflows/jest.yml)
 
 ## Описание
 
